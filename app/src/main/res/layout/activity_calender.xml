@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#ffffff"
+    tools:context="inkyu.project_swipe.CalenderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#21a4ff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right">
+            <Button
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:onClick="onClick_TODAY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gridview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:numColumns="7"
+        android:listSelector="@android:color/transparent" >
+    </GridView>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="inkyu.project_swipe.CalenderFragment">
+    </fragment>
+</LinearLayout>
+

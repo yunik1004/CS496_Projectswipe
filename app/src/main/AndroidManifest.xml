@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inkyu.project_swipe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/photo12"
+        android:label="CS496_Project1_2-1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="CS496_Project1_2-1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelloGridPhoto2"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity android:name="newActivity"></activity>
+    </application>
+
+</manifest>

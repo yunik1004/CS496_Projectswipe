@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project_Swipe</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="str_iv_flag">Flag</string>
+    <string-array name="phone">
+        <item>010-1111-1111</item>
+        <item>010-2222-2222</item>
+        <item>010-3333-3333</item>
+    </string-array>
+</resources>
